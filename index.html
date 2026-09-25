@@ -16,16 +16,18 @@
 </head>
 <body>
 
-
-
-<h1>this our html second page</h1>
-	<textarea>white hare some thing</textarea>
-
+<label>write your message</label>
+<textarea id="message" rows="5" cols="40" placeholder="type something hare..."></textarea>
+	<button onclick="showmessage()">submit</button>
+	<p id="result></p>
+	
 
 </body>
 <script>
-
-
+function showmessage(){
+		let message = document.getElementById("message").value;
+	document.getElementById("result").textContent = message;
+		}
 
 
 
